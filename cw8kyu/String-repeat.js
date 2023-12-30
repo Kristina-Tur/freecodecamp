@@ -13,3 +13,6 @@ function repeatStr(n, s) {
   }
   return r;
 }
+
+//repeatStr(5, "fff");
+//'fffffffffffffff'

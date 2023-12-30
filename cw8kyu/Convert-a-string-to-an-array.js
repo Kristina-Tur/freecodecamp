@@ -1,4 +1,5 @@
 // DESCRIPTION:
+//Преобразовать строку в массив
 // Write a function to split a string and convert it into an array of words.
 
 //   Examples(Input ==> Output):
@@ -10,3 +11,4 @@ function stringToArray(string) {
   const arrayOfString = string.split(" ");
   return arrayOfString;
 }
+//['I', 'love', 'arrays', 'they', 'are', 'my', 'favorite']
