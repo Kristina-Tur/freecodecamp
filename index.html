@@ -9,7 +9,14 @@
 </head>
 <body>
 <script>
-
+    function duplicateCount(arr){
+      return arr.sort((a,b) => {
+          if(a % 2 !== 0/* && b % 2 !== 0*/){
+              return a-b
+          }
+      })
+    }
+    console.log(duplicateCount([5, 8, 6, 3, 4]))
 </script>
 </body>
 </html>
