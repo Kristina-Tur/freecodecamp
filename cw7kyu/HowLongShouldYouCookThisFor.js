@@ -20,4 +20,4 @@ function cookingTime(neededPower, minutes, seconds, power) {
     return min + ' minutes ' + sec + ' seconds'
 }
 
-console.log(cookingTime('450W', 3, 25, '950W'))
+console.log(cookingTime('450W', 3, 25, '950W'))a
