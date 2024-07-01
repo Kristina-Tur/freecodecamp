@@ -9,7 +9,15 @@
 </head>
 <body>
 <script>
-
+    function getState(promise) {
+        return new Promise(() => {})
+            .then(() => "fulfilled")
+            .catch(() => "rejected")
+            .finally(() => "pending")
+    }
+    const p = Promise.resolve();
+    const state = await getState(p); // === "fulfilled"
+    console.log(state)
 </script>
 </body>
 </html>
