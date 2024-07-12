@@ -17,6 +17,7 @@ function findUniqObj(arr) {
             return arrElement
         }
     }
+
     return -1
 
 }
