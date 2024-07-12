@@ -9,15 +9,22 @@
 </head>
 <body>
 <script>
-    function getState(promise) {
-        return new Promise(() => {})
-            .then(() => "fulfilled")
-            .catch(() => "rejected")
-            .finally(() => "pending")
+    function findUniqObj(arr) {
+        debugger
+        let obj= {}
+        for (let arrElement of arr) {
+            obj[arrElement] = (obj[arrElement] || 0) + 1
+        }
+        for (let arrElement of arr) {
+            if(obj[arrElement] === 1){
+                return arrElement
+            }
+        }
+        return -1
+
     }
-    const p = Promise.resolve();
-    const state = await getState(p); // === "fulfilled"
-    console.log(state)
+
+    console.log(findUniqObj([1, 1, 1, 2, 1, 1]))
 </script>
 </body>
 </html>
