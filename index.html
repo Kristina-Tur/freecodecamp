@@ -9,22 +9,22 @@
 </head>
 <body>
 <script>
-    function findUniqObj(arr) {
+    function arrayDiff(a, b) {
         debugger
-        let obj= {}
-        for (let arrElement of arr) {
-            obj[arrElement] = (obj[arrElement] || 0) + 1
+        if(b.length === 0){
+            return a
         }
-        for (let arrElement of arr) {
-            if(obj[arrElement] === 1){
-                return arrElement
+        let newArr = []
+        for (arrElA of a){
+            for (arrElB of b){
+                if(arrElB !== arrElA){
+                    newArr.push(arrElA)
+                }
             }
         }
-        return -1
-
+        return newArr
     }
-
-    console.log(findUniqObj([1, 1, 1, 2, 1, 1]))
+    arrayDiff([1,2,3], [1,2])
 </script>
 </body>
 </html>

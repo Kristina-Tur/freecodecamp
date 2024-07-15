@@ -13,6 +13,7 @@ function findUniqObj(arr) {
         obj[arrElement] = (obj[arrElement] || 0) + 1
     }
     for (let arrElement of arr) {
+        console.log(obj)
         if(obj[arrElement] === 1){
             return arrElement
         }
